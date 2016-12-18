@@ -35,7 +35,7 @@ apply plugin: 'io.spring.dependency-management'
 defaultTasks 'bootRun'
 
 bootRepackage {
-   mainClass = 'com.puffpdx.api.PuffpdxApp'
+   mainClass = 'com.nomspdx.api.NomspdxApp'
 }
 
 war {
@@ -43,7 +43,7 @@ war {
 }
 
 springBoot {
-    mainClass = 'com.puffpdx.api.PuffpdxApp'
+    mainClass = 'com.nomspdx.api.NomspdxApp'
     executable = true
     buildInfo()
 }
@@ -116,7 +116,7 @@ if (project.hasProperty('shell')) {
     }
 }
 
-group = 'com.puffpdx.api'
+group = 'com.nomspdx.api'
 version = '0.0.1-SNAPSHOT'
 
 description = ''

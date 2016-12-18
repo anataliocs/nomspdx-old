@@ -22,7 +22,7 @@
     </appender>
 -->
 
-    <logger name="com.puffpdx.api" level="#logback.loglevel#"/>
+    <logger name="com.nomspdx.api" level="#logback.loglevel#"/>
 
     <logger name="javax.activation" level="WARN"/>
     <logger name="javax.mail" level="WARN"/>

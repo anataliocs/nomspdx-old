@@ -10,16 +10,16 @@
         <heap>100</heap>
     </cache-template>
 
-    <cache alias="com.puffpdx.api.domain.User" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.User" uses-template="simple"/>
 
-    <cache alias="com.puffpdx.api.domain.Authority" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.Authority" uses-template="simple"/>
 
-    <cache alias="com.puffpdx.api.domain.User.authorities" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.User.authorities" uses-template="simple"/>
 
-    <cache alias="com.puffpdx.api.domain.PersistentToken" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.PersistentToken" uses-template="simple"/>
 
-    <cache alias="com.puffpdx.api.domain.User.persistentTokens" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.User.persistentTokens" uses-template="simple"/>
 
-    <cache alias="com.puffpdx.api.domain.PersistentAuditEvent" uses-template="simple"/>
+    <cache alias="com.nomspdx.api.domain.PersistentAuditEvent" uses-template="simple"/>
 
 </config>

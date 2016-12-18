@@ -1,5 +1,8 @@
 version: 1
 
+google:
+    apikey: ${GOOGLE_API_KEY}
+
 services:
   threadPoolTaskExecutorConfig:
     allowCoreThreadTimeOut: false
@@ -9,14 +12,14 @@ services:
     queueCapacity: 2147483647
 
   eventRegistrationServiceUri:
-    scheme: http
-    host: localhost
-    port: 8089
-    basePath: api/{version}/strains
-    templateValues: v1.0
+    scheme: https
+    host: maps.googleapis.com
+    port: 8080
+    basePath: /maps/api/place/details/json?placeid={placeId}
+    templateValues:
   eventPublicationServiceUri:
-    scheme: http
-    host: localhost
-    port: 8089
-    basePath: /api/{version}/flowers/
-    templateValues: v1.0
+    scheme: https
+    host: maps.googleapis.com
+    port: 8080
+    basePath: /maps/api/place/details/json?placeid={placeId}
+    templateValues:

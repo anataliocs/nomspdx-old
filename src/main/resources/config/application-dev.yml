@@ -24,15 +24,15 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/puffpdx;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:file:./target/h2db/db/nomspdx;DB_CLOSE_DELAY=-1
         name:
-        username: puffpdx
+        username: nomspdx
         password:
     h2:
         console:
             enabled: false
     jpa:
-        database-platform: com.puffpdx.api.domain.util.FixedH2Dialect
+        database-platform: com.nomspdx.api.domain.util.FixedH2Dialect
         database: H2
         show-sql: true
         properties:
@@ -41,7 +41,7 @@ spring:
             hibernate.generate_statistics: true
             hibernate.javax.cache.provider: org.ehcache.jsr107.EhcacheCachingProvider
             hibernate.javax.cache.uri: ${spring.cache.jcache.config}
-            hibernate.cache.region.factory_class: com.puffpdx.api.config.jcache.SpringCacheRegionFactory
+            hibernate.cache.region.factory_class: com.nomspdx.api.config.jcache.SpringCacheRegionFactory
     cache:
         jcache:
             config: ehcache.xml
@@ -74,7 +74,7 @@ jhipster:
             # security key (this key should be unique for your application, and kept secret)
             key: 8f0dd04fc1b2a056a981a7547d1316a94a13fa46
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: puffpdx@localhost
+        from: nomspdx@localhost
         baseUrl: http://127.0.0.1:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
@@ -82,7 +82,7 @@ jhipster:
             enabled: false
             host: localhost
             port: 2003
-            prefix: puffpdx
+            prefix: nomspdx
         prometheus:
             enabled: false
             endpoint: /prometheusMetrics

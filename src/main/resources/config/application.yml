@@ -18,7 +18,7 @@ management:
             enabled: false # When using the MailService, configure an SMTP server and set this to true
 spring:
     application:
-        name: puffpdx
+        name: nomspdx
     profiles:
         # The commented value for `active` can be replaced with valid Spring profiles to load.
         # Otherwise, it will be filled in by gradle when building the WAR file
@@ -84,10 +84,10 @@ jhipster:
         #allow-credentials: true
         #max-age: 1800
     mail:
-        from: puffpdx@localhost
+        from: nomspdx@localhost
     swagger:
-        title: puffpdx API
-        description: puffpdx API documentation
+        title: nomspdx API
+        description: nomspdx API documentation
         version: 0.0.1
         termsOfServiceUrl:
         contactName:
